@@ -1,0 +1,23 @@
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  root: ".",
+  base: "./", // ensures assets load correctly on any host
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    minify: "esbuild",
+    cssMinify: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: "assets/[name]-[hash][extname]",
+        chunkFileNames: "assets/[name]-[hash].js",
+        entryFileNames: "assets/[name]-[hash].js"
+      }
+    }
+  },
+  server: {
+    open: true,
+    port: 5173
+  }
+});

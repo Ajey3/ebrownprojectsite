@@ -1,0 +1,35 @@
+/* Default = Dark Theme */
+:root {
+  --bg: #0a0c0f;
+  --bg-2: #0f1217;
+  --bg-3: #141820;
+  --surface: #1a1f2e;
+  --surface-2: #212840;
+  --border: rgba(99, 130, 200, 0.12);
+  --border-hi: rgba(99, 130, 200, 0.28);
+  --text: #e8ecf4;
+  --text-2: #8b96b0;
+  --text-3: #4e5a72;
+  --cyan: #4dd9c0;
+  --cyan-dim: rgba(77, 217, 192, 0.12);
+  --cyan-dim2: rgba(77, 217, 192, 0.06);
+}
+
+/* Light Theme */
+:root.light {
+  --bg: #f7f9fc;
+  --bg-2: #ffffff;
+  --bg-3: #eef2f7;
+  --surface: #ffffff;
+  --surface-2: #f2f5fa;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hi: rgba(0, 0, 0, 0.18);
+  --text: #1a1c1f;
+  --text-2: #4a4f57;
+  --text-3: #7c8696;
+  --cyan: #009e8a;
+  --cyan-dim: rgba(0, 158, 138, 0.12);
+  --cyan-dim2: rgba(0, 158, 138, 0.06);
+  --amber: #f5a623;
+  --amber-dim: rgba(245, 166, 35, 0.1);
+}

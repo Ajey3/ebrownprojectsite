@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emmanuel Brown — Frontend Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Modular CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/sections.css" />
+  <link rel="stylesheet" href="assets/css/themes.css" />
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">EB.DEV</a>
+
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" data-theme-toggle>
+    <span class="moon">🌙</span>
+    <span class="sun">☀️</span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+
+  <div class="hero-inner">
+    <div class="hero-tag">
+      <span class="status">
+        <span class="status-dot"></span>Available for work
+      </span>
+    </div>
+
+    <h1>Emmanuel<br /><span>Brown</span></h1>
+
+    <p class="hero-sub">
+      <strong>Frontend Developer</strong> with a range — shipping polished interfaces today,
+      building toward systems that touch the physical world.
+    </p>
+
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#projects">
+        View Work
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+
+      <a class="btn btn-secondary" href="#contact">
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-label">// selected work</div>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 01 -->
+    <div class="project-card" data-anim>
+      <span class="project-number">01 —</span>
+      <h3 class="project-name">Restaurant Ordering & Review Platform</h3>
+
+      <p class="project-problem">
+        Restaurants were losing customer data and revenue to third-party platforms. This gives it back.
+      </p>
+
+      <p class="project-desc">
+        A full-stack ordering platform with distinct customer and admin views — customers place orders and leave reviews,
+        management tracks order status and responds to feedback directly. No third-party data control, no middleman.
+      </p>
+
+      <div class="project-stack">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">React</span>
+      </div>
+
+      <div class="project-links">
+        <a class="project-link" href="#" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+
+        <a class="project-link" href="#" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 02 -->
+    <div class="project-card" data-anim>
+      <span class="project-number">02 —</span>
+      <h3 class="project-name">LEO Satellite Tracker</h3>
+
+      <p class="project-problem">
+        Satellite tracking tools are complex, expensive, and slow. This is none of those things.
+      </p>
+
+      <p class="project-desc">
+        A real-time Low Earth Orbit tracking app that visualizes live satellite positions on an interactive
+        world map. Fetches public NASA-format orbital data (TLEs), calculates positions using orbital mechanics,
+        and updates every 10 seconds — zero setup, zero cost, zero dependencies.
+      </p>
+
+      <div class="project-stack">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Orbital Mechanics</span>
+      </div>
+
+      <div class="project-links">
+        <a class="project-link" href="#" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+
+        <a class="project-link" href="#" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Placeholder -->
+    <div class="project-card placeholder" data-anim>
+      <div class="placeholder-inner">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto; color: #4e5a72;">
+          <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+        <p>Project coming soon</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-label">// about me</div>
+  <h2 class="section-title">The Work & The Direction</h2>
+
+  <div class="about-grid">
+
+    <div class="about-text" data-anim>
+      <p>
+        I'm a frontend developer with a background in <strong>React, JavaScript, HTML, and CSS</strong> —
+        building interfaces that are clean, purposeful, and built to last.
+      </p>
+
+      <p>
+        What draws me to this work isn't just the craft of UI — it's the challenge of making complex systems
+        legible and useful to real people. Whether that's a restaurant owner managing their business or
+        someone tracking satellites in real time.
+      </p>
+
+      <p>
+        Longer term, I'm building toward <strong>embedded systems and low-level software</strong> —
+        the kind that runs satellites, controls infrastructure, and makes physical things work. Currently
+        studying C, Linux, and systems programming alongside my frontend work.
+      </p>
+    </div>
+
+    <div class="skills-block" data-anim>
+      <div class="skills-label">Frontend</div>
+      <div class="skills-list">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">React</span>
+      </div>
+
+      <div class="skills-label">General</div>
+      <div class="skills-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Git</span>
+      </div>
+
+      <div class="skills-label">Emerging</div>
+      <div class="skills-list">
+        <span class="skill-tag emerging">C</span>
+        <span class="skill-tag emerging">Linux</span>
+        <span class="skill-tag emerging">Embedded Systems</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider" />
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-label">// get in touch</div>
+  <h2 class="section-title">Let's Work Together</h2>
+
+  <div class="contact-inner" data-anim>
+    <div class="contact-text">
+      <h3>Open to roles<br />& freelance work.</h3>
+      <p>Available for frontend developer positions and freelance projects. Let's talk.</p>
+    </div>
+
+    <div class="contact-links">
+      <a class="contact-item" href="mailto:ebo496@gmail.com">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        ebo496@gmail.com
+      </a>
+
+      <a class="contact-item" href="http://linkedin.com/in/emmanuel-b-b3520413" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        linkedin.com/in/emmanuel-b-b3520413
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Emmanuel Brown</p>
+  <p>Built with HTML, CSS & JavaScript</p>
+</footer>
+
+<!-- JS Modules -->
+<script type="module" src="assets/js/theme.js" defer></script>
+<script type="module" src="assets/js/scroll-anim.js" defer></script>
+<script type="module" src="assets/js/nav.js" defer></script>
+</body>
+</html>
